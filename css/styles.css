@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+    --main-color: rgb(104, 65, 187);
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    font-family: 'Press Start 2P', cursive;
+}
+
+h1 {
+    font-size: 3rem;
+    color:#fff;
+    margin-bottom: 4rem;
+}
+
+h2 {
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.front-title {
+    color: var(--main-color);
+     transition: 500ms;
+}
+
+.front-title:hover {
+    box-shadow: 0 0.2rem 4rem 0 rgba(99, 8, 244, 0.6);
+}
+
+.btn {
+    font-size: 2.4rem;
+    padding: 3rem;
+    width: 30rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin: 10px;
+    text-decoration: none;
+    color: rgb(28, 26, 26);
+    background: linear-gradient(90deg, rgb(111, 190, 240) 0%, rgb(0, 102, 185) 100%);
+    border-radius: 50% 0px;
+    transition: 500ms;
+}
+
+.btn:hover {
+    cursor:pointer;
+    box-shadow: 0 0.4rem 2rem 0 rgba(99, 8, 244, 0.6);
+    transform: scale(1.03);
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+#highscore-btn {
+    background: linear-gradient(90deg,var(--main-color)  0%, rgba(156, 90, 255, 0.9) 100%);;
+}
+
+#highsocre-btn:hover {
+    box-shadow: 0 0.4rem 1.4rem 0 var(--main-color);
+}
+
+.fa-trophy {
+    font-size: 2.5rem;
+    margin-left: 1rem;
+}
+
+.fa-home {
+    font-size: 2.5rem;
+    margin-left: 0.5rem;
+    color: rgb(28, 26, 26);
+}
+
+/*End Page CSS*/
+
+.end-form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30rem;
+}
+
+input {
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border: none;
+    box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+#username {
+    margin-bottom: 3rem;
+    width: 100%;
+    outline: none;
+}
+
+#end-text {
+    font-size: 2.4rem;
+    color: #fff;
+    text-align: center;
+}
+
+#saveScoreBtn {
+    border: none;
+    background: linear-gradient(90deg, rgb(156, 90, 255) 0%, var(--main-color) 100%);
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+}
