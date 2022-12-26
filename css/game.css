@@ -82,9 +82,28 @@ body {
 @media screen and (max-width: 768px) {
     .choice-container {
         min-width: 40rem;
+        width: 80%;
+    }
+
+    #question {
+        font-size: 1.5rem;
+        margin-top: 16px;
+        width: 80%;
+    }
+
+    .show-score {
+        font-size: 2rem;
+        margin: auto;
+        position: absolute;
+        top: 20%;
+        right: 50%;
+    }
+
+    #score {
+      margin: 8px;
     }
 
     * {
-        font-size: 45%;
+        font-size: 40%;
     }
 }
